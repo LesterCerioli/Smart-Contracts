@@ -1,13 +1,13 @@
 module.exports = {
   networks: {
-    // Rede local (Ganache)
+    // Local network (Ganache)
     development: {
-      host: "127.0.0.1",  // Localhost
-      port: 7545,          // Porta padrão do Ganache GUI
-      network_id: "*",     // Aceita qualquer network ID (Ganache usa 1337)
+      host: "127.0.0.1",  
+      port: 7545,          
+      network_id: "*",     
     },
 
-    // Rede Sepolia (opcional - só se for usar testnet)
+    // Sepolia Network (opcional - só se for usar testnet)
     sepolia: {
       provider: () => new HDWalletProvider(
         process.env.MNEMONIC,
